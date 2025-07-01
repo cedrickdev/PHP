@@ -7,16 +7,16 @@ chaque note est sauvegardée dans un tableau $notes (pensez notes[])
 
 $notes = [];
 
-while(true){
+while (true) {
     echo "Enter a note : ";
     $note = readline();
-    if($note === "fin"){
+    if ($note === "fin") {
         break;
-    }else{
-        $notes[] = (int)$note;
+    } else {
+        $notes[] = (int) $note;
     }
 }
 
- foreach ($notes as $res){
+foreach ($notes as $res) {
     echo "- $res \n";
- }
+}
